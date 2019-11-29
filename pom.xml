@@ -156,15 +156,20 @@
     </reporting>
 
     <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Nexus Releases</name>
+            <url>https://portal.life.uni-leipzig.de/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus Snapshots</name>
+            <url>https://portal.life.uni-leipzig.de/content/repositories/snapshots</url>
+        </snapshotRepository>
         <site>
             <id>www.alexanderkiel.net</id>
             <url>scp://www.alexanderkiel.net/var/www/www.alexanderkiel.net/www/static/projects/junit-util</url>
         </site>
     </distributionManagement>
-
-    <ciManagement>
-        <system>hudson</system>
-        <url>https://hudson.alexanderkiel.net/job/junit-util/</url>
-    </ciManagement>
 
 </project>
